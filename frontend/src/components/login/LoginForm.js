@@ -34,6 +34,9 @@ export default function LoginForm() {
     return re.test(String(email).toLowerCase());
   };
 
+  const suppliers = ['Cytiva', 'Asecos', 'Eppendorf', 'Sartorius', 'Corning', 'Thermo Scientific BID', 'Thermo Scientific LCD', 'Thermo Scientific LPD', 'DWK',
+  'Ansell', 'Julabo', 'Kimberly Clark', 'Purus', 'Steris', 'Dupont de Nemours'];
+
   return (
     <Container maxWidth="md" sx={{ mb: 5 }}>
       <img
@@ -51,16 +54,15 @@ export default function LoginForm() {
         variant={matchesSM ? "h3" : "h5"}
         align="center"
       >
-          Bienvenue sur la page d'inscription de l’Activate Science Sanofi Marcy l'Etoile.
+          Bienvenue sur la page d'inscription de l’Activate Science Evotec Toulouse.
       </Typography>
-      <Typography sx={{mt:1}} variant="body2" align="center">Cet événement aura lieu le  16 mars 2023 de 9h à 17h, bâtiment X Salles Polaris et Andromède</Typography>
+      <Typography sx={{mt:1}} variant="body2" align="center">Cet événement aura lieu le  4 avril 2023 de 9h à 17h, bâtiment B16</Typography>
       <Typography sx={{ mt: 3 }} align="center">
           C'est une excellente occasion pour vous d'en apprendre davantage sur les dernières innovations de nos partenaires,
           fournisseurs ainsi que d'acquérir une expérience de première main sur les équipements, consommables et réactifs présentés.
       </Typography>
       <Typography sx={{ mt: 2 }} align="center">
-          Vous pourrez également assister à une présentation sur la cytométrie par notre
-          fournisseur Thermo Scientific qui se déroulera de 10h30 à 11h30 (salle Auditorium Bat X Sud).
+         Nos partenaires présents à cet événement seront: {suppliers.sort().map((supplier) => (<span key={supplier}>{supplier}, </span>))}
       </Typography>
       <Typography sx={{ mt: 2 }} align="center">
           Des rafraichissements seront proposés <br />tout au long de la journée. <br />

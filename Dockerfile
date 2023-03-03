@@ -5,7 +5,7 @@ RUN apk add nginx
 
 
 COPY /backend/. /
-COPY /frontend/build /var/www/localhost/htdocs/activate-science/20481
+COPY /frontend/build /var/www/localhost/htdocs/activate-science/20497
 COPY /start.sh /
 RUN chmod +x /start.sh
 

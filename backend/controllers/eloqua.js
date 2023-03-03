@@ -45,7 +45,7 @@ exports.getUserByEmail = async (req, res) => {
 
 exports.checkIfUserPreRegister = async (req, res) => {
     const { email } = req.body;
-    const data = await fetchData(`https://ebiz.thermofisher.com/EU/NLSU/2.0/index.php?action=checkRegistrationActivateScienceSanofi`);
+    const data = await fetchData(`https://ebiz.thermofisher.com/EU/NLSU/2.0/index.php?action=checkRegistrationActivateScienceEvotec`);
     res.json(data);
 }
 
@@ -92,7 +92,7 @@ exports.preRegisterActivateScience = async (req, res) => {
 
     var options = {
         'method': 'POST',
-        'url': 'https://ebiz.thermofisher.com/EU/NLSU/2.0/index.php?action=submitInscriptionActivateScience',
+        'url': 'https://ebiz.thermofisher.com/EU/NLSU/2.0/index.php?action=submitInscriptionActivateScienceEvotec',
         'headers': {
         },
         formData: {

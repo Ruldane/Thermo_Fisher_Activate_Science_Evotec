@@ -22,7 +22,7 @@ function App() {
   // get();
   const { user } = useSelector((state) => ({ ...state }));
   return (
-      <BrowserRouter basename="/activate-science/20481">
+      <BrowserRouter basename="/activate-science/20497">
       <Routes>
         <Route element={<LoggedInRoutes />}>
           <Route path="/" element={<Home />} />

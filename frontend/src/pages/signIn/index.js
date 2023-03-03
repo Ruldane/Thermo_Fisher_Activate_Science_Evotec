@@ -13,7 +13,7 @@ import {InputLabel} from "@mui/material";
 export default function SignIn() {
     const {email} = useParams();
 
-    const [user, setUser] = useState({});
+    const [user, setUser] = useState("");
     const navigate = useNavigate();
 
     const handleChange = (e) => {{
@@ -140,7 +140,7 @@ export default function SignIn() {
                 id="title"
                 name="title"
                 autoFocus
-                value={user.title}
+                value={user?.title}
                 onChange={handleChange}
             />
             <InputLabel id="test-select-label" required>Adresse email</InputLabel>
@@ -151,7 +151,7 @@ export default function SignIn() {
             name="emailAddress"
             autoFocus
             onChange={handleChange}
-            value={user.emailAddress}
+            value={user?.emailAddress}
           />
             <InputLabel id="test-select-label">Numéro de compte Thermofisher</InputLabel>
           <TextField
@@ -161,7 +161,7 @@ export default function SignIn() {
             type="text"
             id="accountNumber"
             onChange={handleChange}
-            value={user.Account_Number}
+            value={user?.Account_Number}
           />
             <InputLabel id="test-select-label" required>Prénom</InputLabel>
             <TextField
@@ -171,7 +171,7 @@ export default function SignIn() {
             id="firstName"
             name="firstName"
             autoFocus
-            value={user.firstName}
+            value={user?.firstName}
             onChange={handleChange}
           />
             <InputLabel id="test-select-label" required>Nom</InputLabel>
@@ -182,7 +182,7 @@ export default function SignIn() {
             id="lastName"
             name="lastName"
             autoFocus
-            value={user.lastName}
+            value={user?.lastName}
             onChange={handleChange}
           />
             <InputLabel id="test-select-label" required>Entreprise</InputLabel>
@@ -193,7 +193,7 @@ export default function SignIn() {
             id="company"
             name="company"
             autoFocus
-            value={user.Company_name}
+            value={user?.Company_name}
             onChange={handleChange}
           />
             <InputLabel id="test-select-label">Téléphone de l'entreprise</InputLabel>
@@ -204,7 +204,7 @@ export default function SignIn() {
             name="businessPhone"
             autoFocus
             type="number"
-            value={user.businessPhone}
+            value={user?.businessPhone}
             onChange={handleChange}
           />
             <InputLabel id="test-select-label" required>Addresse 1</InputLabel>
@@ -216,7 +216,7 @@ export default function SignIn() {
             name="address1"
             autoFocus
             type="text"
-            value={user.address1}
+            value={user?.address1}
             onChange={handleChange}
           />
             <InputLabel id="test-select-label" required>Ville</InputLabel>
@@ -228,7 +228,7 @@ export default function SignIn() {
             name="city"
             autoFocus
             type="text"
-            value={user.city}
+            value={user?.city}
             onChange={handleChange}
           />
             <InputLabel id="test-select-label">Adresse 2</InputLabel>
@@ -239,7 +239,7 @@ export default function SignIn() {
             name="address2"
             autoFocus
             type="text"
-            value={user.address2}
+            value={user?.address2}
             onChange={handleChange}
           />
             <InputLabel id="test-select-label" required>Code Postal</InputLabel>
@@ -251,7 +251,7 @@ export default function SignIn() {
               name="zipPostal"
               autoFocus
               type="text"
-              value={user.zipPostal}
+              value={user?.zipPostal}
               onChange={handleChange}
           />
             <InputLabel id="test-select-label" required>Pays</InputLabel>
@@ -263,7 +263,7 @@ export default function SignIn() {
             autoFocus
             name="country"
             type="text"
-            value={user.country}
+            value={user?.country}
             onChange={handleChange}
           />
             { !user.title || !user.emailAddress || !user.firstName || !user.lastName
