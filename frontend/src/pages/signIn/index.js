@@ -119,7 +119,7 @@ export default function SignIn() {
           }}
         />
           <Typography sx={{ mt: -2, color: "black", pb: 2 }} variant="body1" align="center">
-              Inscrivez-vous dès maintenant <br />  à l'évènement Activate Science<br />Sanofi Marcy l'Etoile du 16 mars 2023
+              Inscrivez-vous dès maintenant <br />  à l'évènement Activate Science<br />Evotec Toulouse du 04 avril 2023
             <br />
         </Typography>
       </Container>
