@@ -108,15 +108,15 @@ const SelectSupplier = () => {
         </Select>
       </FormControl>
       {supplier.length > 0 && (
-        <>
+        <div style={{ display: "flex", justifyContent: "center", alignItems: "center"}}>
           <Button
-            sx={{ mt: 1 }}
+            sx={{ mt: 2, width: 0.5 }}
             href={`../supplier/${email}/${supplier}`}
             variant="contained"
           >
             Validez votre sélection.
           </Button>
-        </>
+        </div>
       )}
     </Container>
   );
