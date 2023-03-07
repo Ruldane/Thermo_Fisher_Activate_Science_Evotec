@@ -237,7 +237,7 @@ export default function ChoiceForm() {
                   : undefined}
             <div className="reg_btn_wrapper">
 
-              <button    disabled={!requestType} className={!requestType ? "grey_btn" : "blue_btn open_signup"} >
+              <button    disabled={!requestType}  style={{width: "90%"}} className={!requestType ? "grey_btn" : "blue_btn open_signup"} >
                 Validez votre demande.
               </button>
             </div>

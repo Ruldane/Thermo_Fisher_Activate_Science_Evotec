@@ -11,6 +11,7 @@ import Background from '../../images/Background.png';
 
 export default function LoginForm() {
   const matchesSM = useMediaQuery((theme) => theme.breakpoints.up("sm"));
+    const matchesLessSM = useMediaQuery((theme) => theme.breakpoints.down("sm"));
   const navigate = useNavigate();
 
   const [email, setEmail] = useState("");
@@ -56,15 +57,15 @@ export default function LoginForm() {
       >
           Bienvenue sur la page d'inscription de l’Activate Science Evotec Toulouse.
       </Typography>
-      <Typography sx={{mt:1}} variant="body2" align="center">Cet événement aura lieu le  4 avril 2023 de 9h à 17h, bâtiment B16</Typography>
+      <Typography sx={{mt:1}} variant={matchesSM ? "h5" : "body2"} align="center">Cet événement aura lieu le  4 avril 2023 de 9h à 17h, bâtiment B16</Typography>
       <Typography sx={{ mt: 3 }} align="center">
           C'est une excellente occasion pour vous d'en apprendre davantage sur les dernières innovations de nos partenaires,
           fournisseurs ainsi que d'acquérir une expérience de première main sur les équipements, consommables et réactifs présentés.
       </Typography>
-      <Typography sx={{ mt: 2 }} align="center">
+      <Typography sx={{ mt: 2 }} variant={matchesSM ? "body1" : "body2"} align="center">
          Nos partenaires présents à cet événement seront: {suppliers.sort().map((supplier) => (<span key={supplier}>{supplier}, </span>))}
       </Typography>
-      <Typography sx={{ mt: 2 }} align="center">
+      <Typography sx={{ mt: 2 }} variant={matchesSM ? "body1" : "body2"} align="center">
           Des rafraichissements seront proposés <br />tout au long de la journée. <br />
           <br />Veuillez vous pré-inscrire en saisissant votre adresse e-mail ci-dessous.
           Cela vous permettra d'obtenir votre QR code unique à utiliser le jour de l’évènement.
@@ -94,7 +95,7 @@ export default function LoginForm() {
           Validez votre inscription
         </Button>
       </Box>
-      <Typography sx={{ mt: 3 }} align="center" variant="body2">
+      <Typography sx={{ mt: 3 }} align="center" variant={matchesSM ? "body1" : "body2"}>
         Thermo Fisher Scientific © 2023
       </Typography>
     </Container>
