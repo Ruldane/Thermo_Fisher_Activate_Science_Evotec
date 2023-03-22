@@ -57,7 +57,7 @@ exports.submitActivateScience = async (req, res) => {
 
     var options = {
         'method': 'POST',
-        'url': 'https://ebiz.thermofisher.com/EU/NLSU/2.0/index.php?action=submitActivateScience',
+        'url': 'https://ebiz.thermofisher.com/EU/NLSU/2.0/index.php?action=submitActivateScienceEvotec',
         'headers': {
         },
         formData: {
@@ -127,7 +127,7 @@ exports.registerActivateScience = async (req, res) => {
 
     var options = {
         'method': 'POST',
-        'url': 'https://ebiz.thermofisher.com/EU/NLSU/2.0/index.php?action=submitValidationActivateScience',
+        'url': 'https://ebiz.thermofisher.com/EU/NLSU/2.0/index.php?action=submitValidationActivateScienceEvotec',
         'headers': {
         },
         formData: {
