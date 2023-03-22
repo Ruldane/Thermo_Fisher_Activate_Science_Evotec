@@ -29,7 +29,7 @@ const countries = [
     'Royaume-Uni',
 ];
 
-export default function SignIn() {
+export default function SigninWithoutQrCode() {
     const {email, noQRCode} = useParams();
 
     const [user, setUser] = useState("");
@@ -66,11 +66,7 @@ export default function SignIn() {
                 `${process.env.REACT_APP_BACKEND_URL}/CheckIfUserPreRegister`);
             data.elements.map(element => {
                     if(element['fieldValues'].some(element => element.value === checkEmail)){
-                        if(noQRCode) {
-                            navigate(`/qrcode/${email}`);
-                        } else {
-                            navigate(`/qrcode/${email}`);
-                        }
+                        navigate(`/choice/${email}`);
                     }
                 }
             );
@@ -122,7 +118,7 @@ export default function SignIn() {
                 }
             );
             if(data?.confirmation) {
-                navigate(`/qrcode/${user.emailAddress}`);
+                navigate(`/choice/${user.emailAddress}`);
             }
         } catch (error) {
             console.error(error);
@@ -216,17 +212,17 @@ export default function SignIn() {
                         fullWidth={!matchesMS}
                         sx={{width: matchesMS ? "80%" : undefined}}
                     />
-                        <InputLabel sx={{ marginLeft:  matchesMS ? "10%" : undefined,  marginRight: matchesMS ? 'auto' : undefined}} id="test-select-label" required>Adresse email</InputLabel>
-                        <TextField
-                            margin="normal"
-                            fullWidth={!matchesMS}
-                            sx={{width: matchesMS ? 0.8 : undefined}}
-                            id="emailAddress"
-                            name="emailAddress"
-                            autoFocus
-                            onChange={handleChange}
-                            value={user?.emailAddress}
-                        />
+                    <InputLabel sx={{ marginLeft:  matchesMS ? "10%" : undefined,  marginRight: matchesMS ? 'auto' : undefined}} id="test-select-label" required>Adresse email</InputLabel>
+                    <TextField
+                        margin="normal"
+                        fullWidth={!matchesMS}
+                        sx={{width: matchesMS ? 0.8 : undefined}}
+                        id="emailAddress"
+                        name="emailAddress"
+                        autoFocus
+                        onChange={handleChange}
+                        value={user?.emailAddress}
+                    />
                     <InputLabel sx={{ marginLeft:  matchesMS ? "10%" : undefined,  marginRight: matchesMS ? 'auto' : undefined}} id="test-select-label">Numéro de compte Thermofisher</InputLabel>
                     <TextField
                         margin="normal"

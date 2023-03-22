@@ -14,6 +14,8 @@ import SignIn from "./pages/signIn";
 import CheckIfUserExist from "./helpers/checkIfUserExist";
 import './App.css';
 import CheckIfUserPreRegister from "./helpers/checkIfUserRegister";
+import NoQrCode from "./pages/noQrCode";
+import SigninWithoutQrCode from "./pages/signinWithoutQrCode";
 function App() {
   // const get = async () => {
   //   const res = await fetch('http://localhost:8000');
@@ -34,6 +36,7 @@ function App() {
         <Route path="/qrcode/:email" element={<QRCodeImage />} exact />
         <Route path="/signin/:email" element={<SignIn />} exact />
         <Route path="/signin" element={<SignIn />} exact />
+        <Route path="/signin/no-qrcode/:email" element={<SigninWithoutQrCode />} exact />
         <Route path="/choice/:email" element={<Choice />} exact />
         <Route
           path="/choiceSupplier/:email"
@@ -56,6 +59,11 @@ function App() {
               element={<CheckIfUserPreRegister />}
               exact
           />
+        <Route
+            path="/no-qrcode"
+            element={<NoQrCode />}
+            exact
+        />
       </Routes>
       </BrowserRouter>
   );
