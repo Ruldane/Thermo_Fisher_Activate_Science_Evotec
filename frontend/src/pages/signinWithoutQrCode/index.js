@@ -200,7 +200,7 @@ export default function SigninWithoutQrCode() {
                     mt: 1
                 }}
                 >
-                    <InputLabel sx={{ marginLeft:  matchesMS ? "10%" : undefined,  marginRight: matchesMS ? 'auto' : undefined}} id="test-select-label" required>Civilité</InputLabel>
+                    <InputLabel sx={{ color: 'black', ontWeight: 'bold', marginLeft:  matchesMS ? "10%" : undefined,  marginRight: matchesMS ? 'auto' : undefined}} id="test-select-label" required>Civilité</InputLabel>
                     <TextField
                         margin="normal"
                         required
@@ -212,7 +212,7 @@ export default function SigninWithoutQrCode() {
                         fullWidth={!matchesMS}
                         sx={{width: matchesMS ? "80%" : undefined}}
                     />
-                    <InputLabel sx={{ marginLeft:  matchesMS ? "10%" : undefined,  marginRight: matchesMS ? 'auto' : undefined}} id="test-select-label" required>Adresse email</InputLabel>
+                    <InputLabel sx={{ color: 'black', ontWeight: 'bold', marginLeft:  matchesMS ? "10%" : undefined,  marginRight: matchesMS ? 'auto' : undefined}} id="test-select-label" required>Adresse email</InputLabel>
                     <TextField
                         margin="normal"
                         fullWidth={!matchesMS}
@@ -223,7 +223,7 @@ export default function SigninWithoutQrCode() {
                         onChange={handleChange}
                         value={user?.emailAddress}
                     />
-                    <InputLabel sx={{ marginLeft:  matchesMS ? "10%" : undefined,  marginRight: matchesMS ? 'auto' : undefined}} id="test-select-label">Numéro de compte Thermofisher</InputLabel>
+                    <InputLabel sx={{ color: 'black', ontWeight: 'bold', marginLeft:  matchesMS ? "10%" : undefined,  marginRight: matchesMS ? 'auto' : undefined}} id="test-select-label">Numéro de compte Thermofisher</InputLabel>
                     <TextField
                         margin="normal"
                         fullWidth={!matchesMS}
@@ -234,7 +234,7 @@ export default function SigninWithoutQrCode() {
                         onChange={handleChange}
                         value={user?.Account_Number}
                     />
-                    <InputLabel sx={{ marginLeft:  matchesMS ? "10%" : undefined,  marginRight: matchesMS ? 'auto' : undefined}} id="test-select-label" required>Prénom</InputLabel>
+                    <InputLabel sx={{ color: 'black', ontWeight: 'bold', marginLeft:  matchesMS ? "10%" : undefined,  marginRight: matchesMS ? 'auto' : undefined}} id="test-select-label" required>Prénom</InputLabel>
                     <TextField
                         margin="normal"
                         required
@@ -246,7 +246,7 @@ export default function SigninWithoutQrCode() {
                         value={user?.firstName}
                         onChange={handleChange}
                     />
-                    <InputLabel sx={{ marginLeft:  matchesMS ? "10%" : undefined,  marginRight: matchesMS ? 'auto' : undefined}} id="test-select-label" required>Nom</InputLabel>
+                    <InputLabel sx={{ color: 'black', ontWeight: 'bold', marginLeft:  matchesMS ? "10%" : undefined,  marginRight: matchesMS ? 'auto' : undefined}} id="test-select-label" required>Nom</InputLabel>
                     <TextField
                         margin="normal"
                         required
@@ -258,7 +258,7 @@ export default function SigninWithoutQrCode() {
                         value={user?.lastName}
                         onChange={handleChange}
                     />
-                    <InputLabel sx={{ marginLeft:  matchesMS ? "10%" : undefined,  marginRight: matchesMS ? 'auto' : undefined}} id="test-select-label" required>Entreprise</InputLabel>
+                    <InputLabel sx={{ color: 'black', ontWeight: 'bold', marginLeft:  matchesMS ? "10%" : undefined,  marginRight: matchesMS ? 'auto' : undefined}} id="test-select-label" required>Entreprise</InputLabel>
                     <TextField
                         margin="normal"
                         required
@@ -270,7 +270,7 @@ export default function SigninWithoutQrCode() {
                         value={user?.Company_name}
                         onChange={handleChange}
                     />
-                    <InputLabel sx={{ marginLeft:  matchesMS ? "10%" : undefined,  marginRight: matchesMS ? 'auto' : undefined}} id="test-select-label">Téléphone de l'entreprise</InputLabel>
+                    <InputLabel sx={{ color: 'black', ontWeight: 'bold', marginLeft:  matchesMS ? "10%" : undefined,  marginRight: matchesMS ? 'auto' : undefined}} id="test-select-label">Téléphone de l'entreprise</InputLabel>
                     <TextField
                         margin="normal"
                         fullWidth={!matchesMS}
@@ -282,7 +282,7 @@ export default function SigninWithoutQrCode() {
                         value={user?.businessPhone}
                         onChange={handleChange}
                     />
-                    <InputLabel id="test-select-label" required>Addresse 1</InputLabel>
+                    <InputLabel sx={{ color: 'black', ontWeight: 'bold', marginLeft:  matchesMS ? "10%" : undefined,  marginRight: matchesMS ? 'auto' : undefined}} id="test-select-label" required>Adresse 1</InputLabel>
                     <TextField
                         margin="normal"
                         required
@@ -296,7 +296,7 @@ export default function SigninWithoutQrCode() {
                         onChange={handleChange}
                     />
 
-                    <InputLabel sx={{ marginLeft:  matchesMS ? "10%" : undefined,  marginRight: matchesMS ? 'auto' : undefined}} id="test-select-label" required>Ville</InputLabel>
+                    <InputLabel sx={{ color: 'black', ontWeight: 'bold', marginLeft:  matchesMS ? "10%" : undefined,  marginRight: matchesMS ? 'auto' : undefined}} id="test-select-label" required>Ville</InputLabel>
                     <TextField
                         margin="normal"
                         required
@@ -309,7 +309,7 @@ export default function SigninWithoutQrCode() {
                         value={user?.city}
                         onChange={handleChange}
                     />
-                    <InputLabel sx={{ marginLeft:  matchesMS ? "10%" : undefined,  marginRight: matchesMS ? 'auto' : undefined}}  id="test-select-label">Adresse 2</InputLabel>
+                    <InputLabel sx={{ color: 'black', ontWeight: 'bold', marginLeft:  matchesMS ? "10%" : undefined,  marginRight: matchesMS ? 'auto' : undefined}} id="test-select-label" required>Adresse 2</InputLabel>
                     <TextField
                         margin="normal"
                         fullWidth={!matchesMS}
@@ -321,7 +321,7 @@ export default function SigninWithoutQrCode() {
                         value={user?.address2}
                         onChange={handleChange}
                     />
-                    <InputLabel sx={{ marginLeft:  matchesMS ? "10%" : undefined,  marginRight: matchesMS ? 'auto' : undefined}} id="test-select-label" required>Code Postal</InputLabel>
+                    <InputLabel sx={{ color: 'black', ontWeight: 'bold', marginLeft:  matchesMS ? "10%" : undefined,  marginRight: matchesMS ? 'auto' : undefined}} id="test-select-label" required>Code Postal</InputLabel>
                     <TextField
                         margin="normal"
                         required
@@ -335,7 +335,7 @@ export default function SigninWithoutQrCode() {
                         onChange={handleChange}
                     />
 
-                    <InputLabel sx={{ marginLeft:  matchesMS ? "10%" : undefined,  marginRight: matchesMS ? 'auto' : undefined}} id="test-select-label" required>Pays</InputLabel>
+                    <InputLabel sx={{ color: 'black', ontWeight: 'bold', marginLeft:  matchesMS ? "10%" : undefined,  marginRight: matchesMS ? 'auto' : undefined}} id="test-select-label" required>Pays</InputLabel>
                     <FormControl variant="outlined" sx={{  width: matchesMS ? "80%" : "100%", mt: 1 }}>
                         <Select
                             labelId="demo-controlled-open-select-label"

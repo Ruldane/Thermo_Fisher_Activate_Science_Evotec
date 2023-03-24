@@ -59,16 +59,21 @@ export default function LoginForm() {
       </Typography>
       <Typography sx={{mt:1}} variant={matchesSM ? "h5" : "body2"} align="center">Cet événement aura lieu le  4 avril 2023 de 9h à 17h, bâtiment B16</Typography>
       <Typography sx={{ mt: 3 }} align="center">
-          C'est une excellente occasion pour vous d'en apprendre davantage sur les dernières innovations de nos partenaires,
-          fournisseurs ainsi que d'acquérir une expérience de première main sur les équipements, consommables et réactifs présentés.
+          Que vous travailliez dans le domaine de la biologie, de la chimie, de la maintenance, de la logistique, des achats ou de la sécurité, cet évènement
+          est une excellente occasion pour vous d'en apprendre davantage sur les dernières innovations de nos fournisseurs partenaires.
+          Il vous permettra également d'acquérir une expérience de première main sur les équipements, consommables et réactifs présentés.
       </Typography>
       <Typography sx={{ mt: 2 }} variant={matchesSM ? "body1" : "body2"} align="center">
-         Nos partenaires présents à cet événement seront: {suppliers.sort().map((supplier) => (<span key={supplier}>{supplier}, </span>))}
+          Votre sécurité étant notre priorité, retrouvez nos partenaires dans la zone safety au 1er étage.
       </Typography>
+        <Typography sx={{ mt: 2 }} variant={matchesSM ? "body1" : "body2"} align="center">
+            Un buffet sera servi à l'heure du déjeuner et des rafraichissements seront à votre disposition tout au long de l'évènement.
+        </Typography>
+        <Typography sx={{ mt: 2 }} variant={matchesSM ? "body1" : "body2"} align="center">
+            Un pack de goodies sera également remis aux participants.
+        </Typography>
       <Typography sx={{ mt: 2 }} variant={matchesSM ? "body1" : "body2"} align="center">
-          Des rafraichissements seront proposés <br />tout au long de la journée. <br />
-          <br />Veuillez vous pré-inscrire en saisissant votre adresse e-mail ci-dessous.
-          Cela vous permettra d'obtenir votre QR code unique à utiliser le jour de l’évènement.
+          Nos partenaires présents à cet événement seront: {suppliers.sort().map((supplier) => (<span key={supplier}>{supplier}, </span>))}
       </Typography>
 
       <Box component="form" onSubmit={submitHandler}>

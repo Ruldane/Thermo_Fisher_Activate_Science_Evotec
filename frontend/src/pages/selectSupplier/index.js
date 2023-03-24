@@ -120,7 +120,7 @@ const SelectSupplier = () => {
                 dans la liste ci-dessous.
             </Typography>
             <Typography sx={{ color: "black" }} variant="body1" align="center">
-                <Button onClick={deleteRoleSupplier}> Cliquez ici</Button> si vous n'êtes un un fournisseur.
+                <Button onClick={deleteRoleSupplier}> Cliquez ici</Button> si vous n'êtes pas un un fournisseur.
             </Typography>
             <FormControl sx={{ width: "100%", mt: 3 }}>
                 <Select
