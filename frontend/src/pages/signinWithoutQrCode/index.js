@@ -33,7 +33,7 @@ export default function SigninWithoutQrCode() {
     const {email, noQRCode} = useParams();
 
     const [user, setUser] = useState("");
-    const [country, setCountry] = useState(user?.country === "FR" ? 'France' : "");
+    const [country, setCountry] = useState("France");
     const [open, setOpen] = useState(false);
 
     const matchesSM = useMediaQuery((theme) => theme.breakpoints.up("sm"));
