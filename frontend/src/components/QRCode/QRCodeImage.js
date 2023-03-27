@@ -7,7 +7,7 @@ import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import {useMediaQuery} from "@mui/material";
 import Button from "@mui/material/Button";
-import Background from '../../images/Background.png'
+import Background from '../../images/Background.webp'
 
 const QRCodeImage = () => {
   let { email } = useParams();

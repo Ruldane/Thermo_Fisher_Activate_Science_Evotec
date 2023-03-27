@@ -1,13 +1,13 @@
 import * as React from "react";
+import {useState} from "react";
 import Typography from "@mui/material/Typography";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
-import {FormControl, InputLabel, Select, MenuItem, useMediaQuery} from '@mui/material';
+import {useMediaQuery} from '@mui/material';
 import {useNavigate} from "react-router-dom";
-import {useState} from "react";
-import Background from '../../images/Background.png';
+import Background from '../../images/Background.webp';
 
 const NoQrCode = () => {
     const matchesSM = useMediaQuery((theme) => theme.breakpoints.up("sm"));

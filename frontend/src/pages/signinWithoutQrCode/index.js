@@ -8,7 +8,7 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import axios from "axios";
 import {useNavigate, useParams} from "react-router-dom";
-import Background from '../../images/Background.png'
+import Background from '../../images/Background.webp';
 import {FormControl, InputLabel, Select, MenuItem, useMediaQuery} from '@mui/material';
 
 const countries = [

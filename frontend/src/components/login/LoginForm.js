@@ -7,7 +7,7 @@ import Button from "@mui/material/Button";
 import Container from "@mui/material/Container";
 import { useMediaQuery } from "@mui/material";
 import Box from "@mui/material/Box";
-import Background from '../../images/Background.png';
+import Background from '../../images/Background.webp';
 
 export default function LoginForm() {
   const matchesSM = useMediaQuery((theme) => theme.breakpoints.up("sm"));
