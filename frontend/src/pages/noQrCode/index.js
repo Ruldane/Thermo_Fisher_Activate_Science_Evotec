@@ -46,7 +46,7 @@ const NoQrCode = () => {
                 }}
             />
             <Typography sx={{ mt: 3 }} align="center" variant={matchesSM? "body1" : "body2"}>
-                Veuillez rentrer votre email. Vous serez automatiquement redirigé vers une page sans QR-code.
+                Veuillez rentrer votre email. Vous serez automatiquement redirigé vers une page sans QR-code après avoir validé le formulaire.
             </Typography>
             <Box component="form" onSubmit={submitHandler}>
                 <TextField
