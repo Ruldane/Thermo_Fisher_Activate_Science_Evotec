@@ -33,7 +33,7 @@ const suppliers = [
     "BEL-ART",
     "CONTEC",
     "CORNING",
-    "CYTIVA",
+    "DUPONT",
     "CYTIVA",
     "EPPENDORF",
     "KIMBERLY CLARK",
@@ -47,7 +47,7 @@ const suppliers = [
     "JULABO",
     "THERMO LPD",
     "STERIS",
-    " Fisher Scientific e-bus"
+    "Fisher Scientific e-bus"
 ];
 const theme = createTheme();
 
