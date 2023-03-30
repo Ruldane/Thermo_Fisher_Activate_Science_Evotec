@@ -366,7 +366,7 @@ export default function SigninWithoutQrCode() {
                         variant="contained"
                         sx={{ mt: 3, mb: 2, width: matchesMS? "80%" : undefined}}
                         disabled={ !user.title || !user.emailAddress || !user.firstName || !user.lastName
-                            || !user.company || !user.address1 || !user.city || !user.zipPostal || !user.country }
+                            || !user.company || !user.address1 || !user.city || !user.zipPostal || !country }
                     >
                         S'inscrire
                     </Button>
