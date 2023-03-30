@@ -12,7 +12,7 @@ import Background from '../../images/Background.webp'
 const QRCodeImage = () => {
   let { email } = useParams();
   const matchesSM = useMediaQuery((theme) => theme.breakpoints.up("sm"));
-  const [url, setUrl] = useState(`https://www.fishersci.eu/activate-science/20481/choice/${email}`);
+  const [url, setUrl] = useState(`https://www.fishersci.eu/activate-science/20497/choice/${email}`);
   const [qr, setQr] = useState("");
 
   const GenerateQRCode = () => {
