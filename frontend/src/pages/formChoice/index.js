@@ -222,7 +222,7 @@ export default function ChoiceForm() {
                         variant="body1"
                         align="center"
                     >
-                        Sanofi Marcy l'Etoile Activate Science.
+                       L'Activate Science Evotec Toulouse.
                     </Typography>
                     <Box sx={{ width: '100%' }}>
                         <LinearProgress />
